@@ -18,7 +18,8 @@ className={
         	flex: true,
         	gap-3: gapComponentProperties,
         	[className]: true,
-	})}
+	})
+}
 ```
 
 ## PureBaldr predefined MixClass conditions
@@ -32,11 +33,13 @@ PureBaldr Core offer base default class conditions, for example:
   className = ""
 }
 ...
-className={mixClass({
-	flex: true,
-	...gapMix(spacing),
-	[className]: true,
-})}
+className={
+	mixClass({
+		flex: true,
+		...gapMix(spacing),
+		[className]: true,
+	})
+}
 ```
 
 ## PureBaldr MixClass list
