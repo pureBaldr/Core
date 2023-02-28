@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Taiwind UiKit wrapper",
   "license": "MIT",
-  "repository": "PostType7/P7-State-Form",
-  "main": "P7StateForm.ts",
+  "repository": "pureBaldr/Core",
+  "main": "index.ts",
   "keywords": [
     "light",
     "less 1 kb",
