@@ -2,6 +2,36 @@
 
 TailWind UiKit wrapper core library
 
+## Setup
+
+### Install
+
+`yarn add @dadmor/pure-baldr-core`
+`npm install @dadmor/pure-baldr-core`
+
+### extending tailWind config
+
+```
+theme: {
+	extend: {
+		colors: {
+			/* 'primary' */
+			primary: {
+          			DEFAULT: "#...",
+          			...
+        		},
+        		secondary: {
+          			DEFAULT: "#...",
+          			...
+        		},
+        		tertiary: {
+          			DEFAULT: "#...",
+          			...
+			}
+		}
+}
+```
+
 ## PureBaldr conditional classes
 
 The mixClass method conditionally compiles a CSS class string. The directive accepts an array of classes where the array key contains the class or classes you wish to add, while the value is a boolean expression. If the array element has a numeric key, it will always be included in the rendered class list:
