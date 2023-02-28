@@ -1,0 +1,21 @@
+{
+  "name": "@dadmor/pure-baldr-core",
+  "version": "0.0.1",
+  "description": "Taiwind UiKit wrapper",
+  "license": "MIT",
+  "repository": "PostType7/P7-State-Form",
+  "main": "P7StateForm.ts",
+  "keywords": [
+    "light",
+    "less 1 kb",
+    "npm",
+    "package",
+    "react",
+    "uikit",
+    "tailwind",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.2.0"
+  }
+}
