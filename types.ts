@@ -1,6 +1,5 @@
 export type DimentionsType =
   | null
-  | ""
   | "none"
   | "xs"
   | "sm"
@@ -10,7 +9,6 @@ export type DimentionsType =
   | "2xl";
 export type TextSizeType =
   | null
-  | ""
   | "xs"
   | "sm"
   | "base"
@@ -19,8 +17,8 @@ export type TextSizeType =
   | "xl"
   | "2xl"
   | "3xl";
-export type TextWeightType = "normal" | "bold" | "upbold";
-export type ColorType =
+export type TextWeightType = null | "normal" | "bold" | "upbold";
+export type ColorType =null | 
   | "primary"
   | "primary-light"
   | "secondary"
@@ -38,5 +36,5 @@ export type ColorType =
   | "gray"
   | "gray-light"
   | "white";
-export type RoundedType = "md" | "lg" | "2xl" | "full";
-export type ShadowType = "md" | "lg" | "full";
+export type RoundedType = null | "md" | "lg" | "2xl" | "full";
+export type ShadowType = null | "md" | "lg" | "full";
