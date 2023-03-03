@@ -1,5 +1,16 @@
-export type DimentionsType = "none" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
+export type DimentionsType =
+  | null
+  | ""
+  | "none"
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl";
 export type TextSizeType =
+  | null
+  | ""
   | "xs"
   | "sm"
   | "base"

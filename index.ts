@@ -11,7 +11,7 @@ import {
 */
 export const gapMix = (value: DimentionsType) => {
   return {
-    "": value === "none",
+    "": value === null,
     "gap-1": value === "xs",
     "gap-2": value === "sm",
     "gap-4": value === "md",
@@ -22,7 +22,7 @@ export const gapMix = (value: DimentionsType) => {
 
 export const paddingxMix = (value: DimentionsType) => {
   return {
-    "": value === "none",
+    "": value === null,
     "px-2": value === "sm",
     "px-4": value === "md",
     "px-6": value === "lg",
@@ -33,7 +33,7 @@ export const paddingxMix = (value: DimentionsType) => {
 
 export const paddingyMix = (value: DimentionsType) => {
   return {
-    "": value === "none",
+    "": value === null,
     "py-2": value === "sm",
     "py-4": value === "md",
     "py-6": value === "lg",
@@ -44,7 +44,7 @@ export const paddingyMix = (value: DimentionsType) => {
 
 export const paddingbMix = (value: DimentionsType) => {
   return {
-    "": value === "none",
+    "": value === null,
     "pb-2": value === "sm",
     "pb-4": value === "md",
     "pb-6": value === "lg",
