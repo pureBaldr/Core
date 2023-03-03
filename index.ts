@@ -188,3 +188,8 @@ export const mixClass = (conditionsObject: any) => {
   );
   return out;
 };
+
+/* 
+    export types
+  */
+export * from "./types";
