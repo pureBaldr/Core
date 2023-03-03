@@ -18,7 +18,8 @@ export type TextSizeType =
   | "2xl"
   | "3xl";
 export type TextWeightType = null | "normal" | "bold" | "upbold";
-export type ColorType =null | 
+export type ColorType =
+  | null
   | "primary"
   | "primary-light"
   | "secondary"
