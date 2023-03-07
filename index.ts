@@ -93,7 +93,7 @@ export const textColorMix = (value: ColorType) => {
     "text-amber-600": value === "warning",
     "text-amber-100": value === "warning-light",
     "text-blue-500": value === "info",
-    "text-gray-100": value === "gray-light",
+    "text-gray-300": value === "gray-light",
     "text-gray-600": value === "gray",
     "text-white": value === "white",
   };
