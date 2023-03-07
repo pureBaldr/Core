@@ -17,6 +17,7 @@ export const gapMix = (value: DimentionsType) => {
     "gap-4": value === "md",
     "gap-6": value === "lg",
     "gap-9": value === "xl",
+    "gap-12": value === "2xl",
   };
 };
 
@@ -77,17 +78,23 @@ export const textWeightMix = (value: TextWeightType) => {
 };
 
 /* todo: add active state color condition */
-export const textColorMix = (value: ColorType, active?: boolean) => {
+export const textColorMix = (value: ColorType) => {
   return {
     "text-primary-500": value === "primary",
+    "text-primary-50": value === "primary-light",
     "text-secondary-900": value === "secondary",
+    "text-secondary-100": value === "secondary-light",
     "text-tertiary-600": value === "tertiary",
+    "text-tertiary-100": value === "tertiary-light",
     "text-red-600": value === "error",
+    "text-red-100": value === "error-light",
     "text-green-700": value === "success",
     "text-green-100": value === "success-light",
     "text-amber-600": value === "warning",
     "text-amber-100": value === "warning-light",
     "text-blue-500": value === "info",
+    "text-gray-50": value === "gray-light",
+    "text-gray-300": value === "gray",
     "text-white": value === "white",
   };
 };
@@ -113,11 +120,10 @@ export const textHoverColorMix = (value: ColorType) => {
     "hover:text-primary-500 active:text-primary-700": value === "primary",
     "hover:text-secondary-600 active:text-secondary-700": value === "secondary",
     "hover:text-tertiary-600 active:text-tertiary-700": value === "tertiary",
-    /* todo: update textHoverColorMix */
-    // "hover:text-blue-400 active:text-blue-500": value === "light",
-    // "hover:text-blue-500 active:text-blue-600": value === "dark",
     "hover:text-red-700 active:text-red-800": value === "error",
     "hover:text-green-400 active:text-green-500": value === "success",
+    "hover:text-yellow-400 active:text-yellow-500": value === "warning",
+    "hover:text-blue-400 active:text-blue-500": value === "info",
   };
 };
 
@@ -148,19 +154,21 @@ export const bgHoverColorMix = (value: ColorType) => {
   return {
     "hover:bg-primary-600 active:bg-primary-700": value === "primary",
     "hover:bg-opacity-80 active:bg-secondary-700": value === "secondary",
-    "hover:bg-tertiary-700 active:bg-tertiary-700": value === "tertiary",
-    "hover:bg-red-800 active:bg-red-800": value === "error",
-    "hover:bg-green-500 active:bg-green-500": value === "success",
-    "hover:bg-gray-200": value === "gray-light",
-    "hover:bg-gray-400": value === "gray",
+    "hover:bg-tertiary-700 active:bg-tertiary-800": value === "tertiary",
+    "hover:bg-red-800 active:bg-red-900": value === "error",
+    "hover:bg-green-500 active:bg-green-600": value === "success",
+    "hover:bg-yellow-500 active:bg-yellow-600": value === "warning",
+    "hover:bg-blue-500 active:bg-blue-600": value === "info",
+    "hover:bg-gray-200 active:bg-gray-300": value === "gray-light",
+    "hover:bg-gray-400 active:bg-gray-500": value === "gray",
   };
 };
 
 export const roundedMix = (value: RoundedType) => {
   return {
     rounded: value === "md",
-    "rounded-lg": value === "lg",
-    "rounded-2xl": value === "2xl",
+    "rounded-md": value === "lg",
+    "rounded-xl": value === "xl",
     "rounded-full": value === "full",
   };
 };
@@ -169,7 +177,8 @@ export const shadowMix = (value: ShadowType) => {
   return {
     shadow: value === "md",
     "shadow-lg": value === "lg",
-    "shadow-full": value === "full",
+    "shadow-xl": value === "xl",
+    "shadow-inner": value === "inner",
   };
 };
 

@@ -1,6 +1,5 @@
 export type DimentionsType =
   | null
-  | "none"
   | "xs"
   | "sm"
   | "md"
@@ -37,5 +36,5 @@ export type ColorType =
   | "gray"
   | "gray-light"
   | "white";
-export type RoundedType = null | "md" | "lg" | "2xl" | "full";
-export type ShadowType = null | "md" | "lg" | "full";
+export type RoundedType = null | "md" | "lg" | "xl" | "full";
+export type ShadowType = null | "md" | "lg" | "xl" | "inner";
